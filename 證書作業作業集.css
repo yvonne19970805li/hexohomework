@@ -210,7 +210,8 @@ body {
 }
 /*以上header*/
 
-.banner-img::after{
+
+.imgs::after{
     content: "";
     width: 72px;
     height: 72px;
@@ -219,7 +220,7 @@ body {
     top: 0;
     left: 0;
 }
-.banner-img::before{
+.imgs::before{
     content: "";
     width: 72px;
     height: 72px;
@@ -260,14 +261,16 @@ body {
     
 }
 
-.BC{
+
+
+.text{
     max-width: 636px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-.2bc{
+.text2{
     max-width: 298px;
 }
 .textbar{
@@ -284,10 +287,11 @@ body {
     width: 24px;
     border-bottom: 2px solid #c1c1c1;
 }
-.2bc p{
+.text2 p{
     text-align: center;
     color: #3B3B3B;
 }
+
 @media (max-width: 992px) {
     .content{
         width: 300px;
@@ -305,26 +309,208 @@ body {
     .textline img{
         width: 108px;
     }
-    .banner-img::after{
+    .imgs::after{
         width: 64px;
         height: 64px;
         top: 0;
         left: 38%;
         
     }
-    .banner-img::before{
+    .imgs::before{
         display: none;
     }
-    .2bc{
+    .text2{
         flex-direction: column;
         align-items: center;
     }
 }
 @media (max-width: 768px) {
-    .BC{
+    .text{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
 /*以上是banner*/
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 120px 0px;
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 80px;
+    margin-bottom: 72px;
+}
+.item2{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.item2 img{
+    border: 1px solid #F1F1F1;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 16px;
+}
+.item3{
+    padding-left: 16px;
+    margin-bottom: 24px;
+}
+.item3 h2{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #3B3B3B;
+    margin-bottom: 8px;
+}
+.item3 p{
+    color: #919191;
+}
+.tag{
+    display: flex;
+    gap: 16px;
+    padding-left: 16px;
+}
+.tag a{
+    text-decoration: none;
+    color: black;
+}
+.tag a:hover{
+   font-weight: bolder;
+}
+.tag li{
+    background-color: #F1F1F1;
+    padding: 4px 12px 4px 12px;
+    border-radius: 16px;
+}
+.page{
+    max-width: 152px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 16px;
+}
+.pages{
+    display: block;
+    background-color: #ffffff;
+    color: #3B3B3B;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 2px 13px 2px 13px;
+}
+.pages:hover {
+    color: #ffffff;
+    background-color: #1E1E1E;
+}
+
+@media (max-width: 992px) {
+    .container{
+        padding: 80px 12px;
+    }
+    .item{
+        row-gap: 48px;
+        margin-bottom: 48px;
+    }
+    .item2{
+        width: 100%;
+    }
+}
+/*以上是主頁內容*/
+
+.footer{
+    border-top: 1px solid #f1f1f1;
+    padding: 80px 0px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-all{
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer-logo img{
+    width: 120px;
+    height: 54px;
+}
+.footer-logo h2{
+    color: #3b3b3b;
+    font-size: 20px;
+}
+.footer-logo a{
+    display: block;
+    color: #919191;
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.footer-logo a:hover{
+    color: #1b1b1b;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footer-list img{
+    margin: 12px;
+}
+
+.footer-list a{
+    display: flex;
+    align-items: center;
+    width: 306px;
+    text-decoration: none;
+    color: #3b3b3b;
+    outline: 1px solid #c1c1c1;
+    background-color: white;
+    font-size: 20px;
+    line-height: 1.2;
+    gap: 16px;
+    padding: 8px 24px;
+    border-radius: 8px;
+}
+
+.footer-list a:hover{
+    font-weight: 700;
+    background: #000;
+    color: #fff;
+}
+
+@media (max-width: 992px){
+    .footer{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+    .footer-list a{
+        padding: 4px 24px;
+    }
+}
+@media (max-width: 768px){
+.footer-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}}
